@@ -1,0 +1,24 @@
+<div class="movie-card">
+  <h4 class="movie-title"><%=movie.title%></h4>
+  <div class="movie-details">
+    <p><%=movie.category%></p>
+    <p><%=movie.rating%></p>
+    <p><%=movie.length%> min</p>
+  </div>
+  <p class="movie-description">
+    <%if(movie.description.length > 70){%>
+    <%=movie.description.slice(0,70)+"..."%> <%}else{%> <%=movie.description%>
+    <%}%>
+  </p>
+  <p class="movie-actors">
+    <%if(movie.actors.length > 70){%> <%=movie.actors.slice(0,70)+"..."%>
+    <%}else{%> <%=movie.actors%> <%}%>
+  </p>
+  <div class="moive-card-footer">
+    <p class="movie-price"><%=movie.price%>$</p>
+    <div class="movie-card-btns">
+      <button class="btn rent-btn">Rent</button>
+      <button class="btn trailer-btn">Trailer</button>
+    </div>
+  </div>
+</div>

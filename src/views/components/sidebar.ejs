@@ -1,0 +1,25 @@
+<div class="sidebar">
+  <h1 id="logo">Sakila</h1>
+  <div class="categories">
+    <h3 id="categories-heading">CATEGORIES</h3>
+    <% if(categories.length > 0) {%> <% for(let cat of categories){%>
+    <li><a href="#" class="category-item"><%=cat%></a></li>
+    <%}%> <%}%>
+  </div>
+  <div class="line"></div>
+  <!-- <div class="general">
+    <h3>General</h3>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Log Out</a></li>
+  </div> -->
+  <div class="footer">
+    <img src="assets/Logo.png" alt="" />
+    <div class="social">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+</div>

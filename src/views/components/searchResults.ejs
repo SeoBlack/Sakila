@@ -1,0 +1,6 @@
+<div class="result-list">
+  <%if(movies.length > 0){%> <%for(let movie of movies){%>
+  <%-include('./movieCard',{movie:movie})%> <%}%> <%} else {%>
+  <p>no movies found</p>
+  <%}%>
+</div>

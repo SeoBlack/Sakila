@@ -1,0 +1,12 @@
+<div class="movie-list">
+  <div class="right-overlay">
+    <i class="fa-solid fa-arrow-right right-btn"><a href=""></a></i>
+  </div>
+  <div class="left-overlay">
+    <i class="fa-solid fa-arrow-left left-btn"><a href=""></a></i>
+  </div>
+  <%if(movies.length > 0){%> <%for(let movie of movies){%>
+  <%-include('./movieCard',{movie:movie})%> <%}%> <%} else {%>
+  <p>no movies found</p>
+  <%}%>
+</div>
